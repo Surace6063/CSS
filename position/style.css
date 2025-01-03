@@ -1,0 +1,65 @@
+/* css position */
+/* sticky postion */
+.sticky {
+  border-bottom: 2px solid black;
+  background-color: #fff;
+  padding: 20px;
+
+  /* Makes the element stick to the viewport when scrolling */
+  position: sticky;
+
+  /* Ensures the element stays 0px from the top of the viewport when sticky */
+  top: 0;
+
+  z-index: 999;
+}
+
+.container {
+  height: 150vh;
+  padding: 20px;
+}
+
+/* fixed position */
+.fixed {
+  background-color: darkslategrey;
+  width: 100px;
+  height: 200px;
+  color: white;
+  padding: 10px;
+  border-radius: 18px;
+
+  position: fixed;
+  top: 200px;
+  right: 0;
+}
+
+/* relative and absolute position */
+.relative {
+  /* Sets the element's position relative to itself, allowing child elements with
+       absolute positioning to position themselves relative to this div */
+  position: relative;
+  width: 800px;
+  height: 200px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 3px solid #0d0d0d;
+}
+
+.absolute {
+  /* Positions the element relative to its closest positioned ancestor
+       (in this case, the `.relative`) */
+  position: absolute;
+
+  /* Positions the top of the element 80px from the top of the `.relative` container */
+  top: 80px;
+
+  /* Positions the right side of the element flush with the right edge of the `.relative` container */
+  right: 0;
+
+  width: 200px;
+  height: 100px;
+  border: 3px solid #6c6e6b;
+  border-radius: 20px;
+  padding: 10px;
+}

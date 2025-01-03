@@ -1,0 +1,79 @@
+.max-container {
+  border: 6px solid maroon;
+  /* Restricts the maximum width of the container to 1150px.
+     This ensures that the container doesn't stretch beyond this width,
+     making it responsive for larger screens. */
+  max-width: 1150px;
+
+  /* Centers the container horizontally by setting automatic margins
+        on both the left and right sides. */
+  margin-inline: auto;
+
+  /* Sets the height of the container to 50% of the viewport height,
+        making it dynamically adapt to the screen size. */
+  height: 50vh;
+
+  padding: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 28px;
+}
+
+/* media query */
+
+/* This media query applies the enclosed styles to devices with a screen width of 
+  1280 pixels or smaller.screen: Ensures the styles apply only to screen devices
+(max-width: 1280px): Targets viewports up to 1280 pixels in width. */
+/* 
+desktops screen */
+@media screen and (max-width: 1280px) {
+  .max-container {
+    border: 6px solid blue;
+  }
+  p {
+    font-size: 24px; /* Adjust font size for desktops */
+  }
+}
+
+/* tablet screen */
+@media screen and (max-width: 1024px) {
+  .max-container {
+    border: 6px solid rgb(179, 235, 57);
+  }
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 20px; /* Adjust font size for tablets */
+  }
+}
+
+/* mobile screen */
+@media screen and (max-width: 768px) {
+  .max-container {
+    border: 6px solid rgb(255, 27, 73);
+  }
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 16px; /* Adjust font size for tablets */
+  }
+}
+
+/* small mobile screen */
+@media screen and (max-width: 480px) {
+  .max-container {
+    border: 6px solid rgb(244, 42, 193);
+  }
+  p {
+    font-size: 12px; /* Adjust font size for small phones */
+  }
+}

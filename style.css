@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* element selector */
+p {
+  color: darkslategrey;
+  font-size: 20px;
+}
+
+/* other diffrent ways to select color */
+/* HEX Color */
+#para1 {
+  color: #ff5733;
+}
+
+/* RGB Color */
+#para2 {
+  color: rgb(0, 123, 255);
+}
+
+/* HSL Color */
+#para3 {
+  color: hsl(120, 70%, 40%);
+  background-color: #f0f8ff;
+}
+
+/* typography -> refers to the style, arrangement, and appearance of text */
+.typo {
+  /* Sets the font family to monospace text style */
+  font-family: monospace;
+  font-size: 20px;
+
+  /* Adjusts the line height for better readability */
+  line-height: 1.5;
+
+  /* Aligns the text to both left and right, creating a clean block appearance */
+  text-align: justify;
+
+  /* Adds spacing between letters for a more spaced-out look */
+  letter-spacing: 2px;
+
+  /* Sets the font weight to bold (600) */
+  font-weight: 600;
+
+  color: rgb(94, 92, 92);
+}
+
+.heading {
+  color: rgb(27, 28, 29);
+  /* center text ...also can have left,right value */
+  text-align: center;
+  /* make text uppercase .. also can have lowercase and capatlize */
+  text-transform: uppercase;
+
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+/* class selector */
+.para {
+  /* hex color code */
+  color: rgb(251, 144, 144);
+}
+
+/* css box model */
+.box {
+  width: 400px;
+  height: 200px;
+
+  /* border-width: 2px;
+    border-style: solid;
+    border-color: black; */
+
+  /* short hand for border -> border: width style color */
+  border: 2px solid black;
+
+  /* padding */
+  /* giving padding to individual side seperately */
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+
+  /* padding shorthand */
+  /* give same padding to all direction */
+  padding: 10px;
+
+  /* padding:top-right-bottom-left */
+  padding: 10px 20px 15px 10px;
+
+  /* top-bottom and left-right */
+  padding: 10px 20px;
+
+  /* margin */
+  /* giving margin to individual side seperately */
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+  /* margin shorthand */
+  /* give same margin to all direction */
+  margin: 10px;
+
+  /* margin:top-right-bottom-left */
+  margin: 10px 20px 15px 10px;
+
+  /* top-bottom and left-right */
+  margin: 10px 20px;
+
+  /* This rounds the corners of the element by 18px */
+  border-radius: 18px;
+
+  /* give shdaow4px 
+  4px 4px: The shadow appears 4px to the right and 4px below the element.
+  6px: The blur radius makes the shadow softer.
+  maroon: Specifies the color of the shadow.  */
+  box-shadow: 4px 4px 6px maroon;
+
+  background-color: aqua;
+}
