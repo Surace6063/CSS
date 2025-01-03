@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 h1 {
   text-align: center;
   text-decoration: underline;
@@ -116,4 +121,19 @@ h1 {
 .box10 {
   background-color: rgb(244, 175, 57);
   flex: 1;
+}
+
+/* gird */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 10px; /* space between grid items */
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
 }
